@@ -46,3 +46,11 @@ for _, plugin in pairs({
 }) do
 	vim.g["loaded_" .. plugin] = 1
 end
+
+a.nvim_create_autocmd("FileType", {
+	pattern = { "markdown", "rmd" },
+	callback = function()
+		vim.treesitter.start()
+		vim.opt_local.conceallevel = 2
+	end,
+})
