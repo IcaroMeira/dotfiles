@@ -11,3 +11,11 @@ k.set("n", "zz", "zc", { silent = true })
 -- Oil
 k.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 k.set("n", "_", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+k.set("n", "<leader><leader>s", "<C-w>s")
+k.set("n", "<leader><leader>v", "<C-w>v")
+k.set("n", "<leader><leader>c", "<C-w>c")
+k.set("n", "<leader><leader>h", "<C-w>h")
+k.set("n", "<leader><leader>j", "<C-w>j")
+k.set("n", "<leader><leader>k", "<C-w>k")
+k.set("n", "<leader><leader>l", "<C-w>l")
