@@ -1,0 +1,13 @@
+mesa
+lib32-mesa
+vulkan-intel
+lib32-vulkan-intel
+
+wireplumber
+pipewire
+pipewire-audio
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+lib32-pipewire
+pavucontrol
