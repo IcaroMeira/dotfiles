@@ -2,7 +2,7 @@
 
 cd ~/dotfiles/
 
-stow -D globals hyprland-setup shell term-emulators
-stow -S globals hyprland-setup shell term-emulators
+stow -D hyprland-setup newsboat nvim shell
+stow -S hyprland-setup newsboat nvim shell
 
 cd ~
