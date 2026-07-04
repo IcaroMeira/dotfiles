@@ -1,11 +1,13 @@
 return {
     "mason-org/mason-lspconfig.nvim",
-    opts = {},
     dependencies = {
         { "mason-org/mason.nvim", opts = {} },
-        "neovim/nvim-lspconfig"
+        "neovim/nvim-lspconfig",
     },
+
     config = function()
+        require("mason").setup()
+
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
@@ -13,5 +15,9 @@ return {
                 "pyright",
             },
         })
+
+        vim.lsp.enable("lua_ls")
+        vim.lsp.enable("clangd")
+        vim.lsp.enable("pyright")
     end,
 }

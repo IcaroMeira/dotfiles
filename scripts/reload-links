@@ -1,8 +1,7 @@
 #!/bin/bash
 
-cd ~/dotfiles/
+stow -d ~/dotfiles/ -D bash feh newsboat nvim sxhkd xorg zsh
+stow -d ~/dotfiles/ -S bash feh newsboat nvim sxhkd xorg zsh
 
-stow -D hyprland-setup newsboat nvim shell
-stow -S hyprland-setup newsboat nvim shell
-
-cd ~
+sudo ln -sf ~/dotfiles/config/xorg/30-touchpad.conf /etc/X11/xorg.conf.d/
+sudo ln -sf ~/dotfiles/config/xorg/00-keyboard.conf /etc/X11/xorg.conf.d/

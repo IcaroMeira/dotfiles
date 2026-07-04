@@ -1,0 +1,6 @@
+#!/bin/bash
+
+alias ls='eza -al'
+alias mdwm='cd ~/dotfiles/dwm/; sudo make clean install; cd -'
+alias cdwm='nvim ~/dotfiles/dwm/config.def.h'
+alias cdot='nvim ~/dotfiles/'

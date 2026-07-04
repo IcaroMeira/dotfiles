@@ -1,0 +1,3 @@
+~/.fehbg &
+sxhkd &
+exec dwm

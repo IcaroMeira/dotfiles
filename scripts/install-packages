@@ -1,5 +1,6 @@
 #!/bin/bash
 
-cat ../config/packages | xargs sudo pacman --noconfirm -S
-cat ../config/fonts | xargs sudo pacman --noconfirm -S
-cat ../config/drivers | xargs sudo pacman --noconfirm -S
+cat ~/dotfiles/config/install/packages | xargs sudo pacman --needed --noconfirm -S
+cat ~/dotfiles/config/install/fonts | xargs sudo pacman --needed --noconfirm -S
+cat ~/dotfiles/config/install/drivers | xargs sudo pacman --needed --noconfirm -S
+cat ~/dotfiles/config/install/yay | xargs yay --needed --noconfirm -S
