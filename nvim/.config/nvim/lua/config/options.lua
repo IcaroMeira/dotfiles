@@ -57,3 +57,10 @@ a.nvim_create_autocmd("FileType", {
 })
 
 vim.diagnostic.config({ virtual_text = false, virtual_lines = false })
+
+vim.cmd [[
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
+]]

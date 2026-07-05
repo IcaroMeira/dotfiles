@@ -1,7 +1,7 @@
 #!/bin/bash
 
-stow -d ~/dotfiles/ -D bash feh newsboat nvim sxhkd xorg zsh
-stow -d ~/dotfiles/ -S bash feh newsboat nvim sxhkd xorg zsh
+stow -d ~/dotfiles/ -D bash feh newsboat nvim qutebrowser sxhkd xorg zsh
+stow -d ~/dotfiles/ -S bash feh newsboat nvim qutebrowser sxhkd xorg zsh
 
 sudo ln -sf ~/dotfiles/config/xorg/30-touchpad.conf /etc/X11/xorg.conf.d/
 sudo ln -sf ~/dotfiles/config/xorg/00-keyboard.conf /etc/X11/xorg.conf.d/

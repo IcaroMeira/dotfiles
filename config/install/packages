@@ -15,7 +15,9 @@ firefox
 xorg-server
 xorg-xinit
 xorg-xinput
+xorg-xdpyinfo
 xbindkeys
+xcompmgr
 tree
 cava
 fastfetch
@@ -30,5 +32,4 @@ usbutils
 stow
 vifm
 mpv
-yes
 dmenu

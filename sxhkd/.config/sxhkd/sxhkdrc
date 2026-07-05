@@ -1,7 +1,10 @@
 super + F1
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 super + {F2,F3}
-    pactl set-sink-volume @DEFAULT_SINK@ {-10%,+10%}
+    pactl set-sink-volume  @DEFAULT_SINK@ {-10%,+10%}
 
 super + {F6,F7}
     brightnessctl set {10%-,+10%}
+
+super + f
+    qutebrowser
