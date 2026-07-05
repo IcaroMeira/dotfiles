@@ -1,5 +1,11 @@
 #!/bin/bash
 
-./scripts/reload-links
-./scripts/install-yay
-./scripts/install-packages
+~/dotfiles/scripts/reload-links
+~/dotfiles/scripts/install-yay
+~/dotfiles/scripts/install-packages
+
+cd ~/dotfiles/dwm/
+sudo make clean install
+cd ~/dotfiles/st
+sudo make clean install
+cd _

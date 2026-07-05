@@ -1,5 +1,13 @@
+setxkbmap br -option caps:escape
+xinput set-prop 7 337 1
+xinput set-prop 7 303 1
+
 sxhkd &
+
 ~/.fehbg &
+
 xcompmgr -c -r-0 &
+
 ~/.fehbg &
+
 exec dwm
