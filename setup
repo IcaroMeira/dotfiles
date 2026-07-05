@@ -1,11 +1,14 @@
 #!/bin/bash
 
+sudo pacman -Syyu
+sudo pacman -S stow
 ~/dotfiles/scripts/reload-links
 ~/dotfiles/scripts/install-yay
 ~/dotfiles/scripts/install-packages
 
+sudo pacman -Syyu
 cd ~/dotfiles/dwm/
 sudo make clean install
 cd ~/dotfiles/st
 sudo make clean install
-cd _
+cd -
