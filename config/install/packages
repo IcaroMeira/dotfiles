@@ -19,6 +19,8 @@ xorg-xdpyinfo
 xorg-setxkbmap
 xbindkeys
 xcompmgr
+xclip
+xdg-user-dirs
 tree
 cava
 fastfetch

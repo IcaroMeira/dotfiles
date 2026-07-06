@@ -2,7 +2,7 @@ setxkbmap br -option caps:escape
 xinput set-prop 7 337 1
 xinput set-prop 7 303 1
 
-sxhkd &
+sxhkd -c ~/sxhkd/sxhkdrc &
 
 ~/.fehbg &
 

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-stow -d ~/dotfiles/ -D bash feh newsboat nvim sxhkd xorg zsh
-stow -d ~/dotfiles/ -S bash feh newsboat nvim sxhkd xorg zsh

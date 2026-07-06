@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm -rf \
+    ~/{.bashrc,.fehbg,.newsboat,.xinitrc,.p10k.zsh,.zshrc} \
+    ~/.config/{nvim,sxhkd} \
+    2>/dev/null
+cd ~/dotfiles/
+stow dot-*
+cd - >/dev/null

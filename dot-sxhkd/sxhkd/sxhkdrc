@@ -6,5 +6,8 @@ super + {F2,F3}
 super + {F6,F7}
     brightnessctl set {10%-,+10%}
 
-super + f
-    qutebrowser
+alt + s
+    firefox
+
+alt + Return
+    st

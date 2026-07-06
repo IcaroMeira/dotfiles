@@ -1,6 +1,13 @@
 #!/bin/bash
 
-alias ls='eza -al'
-alias mdwm='cd ~/dotfiles/dwm/; sudo make clean install; cd -'
-alias cdwm='nvim ~/dotfiles/dwm/config.def.h'
+if ! echo $PATH | grep -q "$HOME/scripts/" && [ -d "$HOME/scripts/" ]; then
+    export PATH=$PATH:$HOME/scripts/
+fi
+
+alias ls='eza -a'
+alias ll='eza -al'
 alias cdot='nvim ~/dotfiles/'
+alias smci='sudo make clean install'
+alias c='clear'
+alias v='nvim'
+alias pac='sudo pacman -S'
