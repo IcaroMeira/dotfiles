@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sudo pacman -Syyu
-sudo pacman -S stow
+sudo pacman -S stow xdg-user-dirs
 xdg-user-dirs-update
-reload-links
-install-yay
-install-packages
+~/dotfiles/dot-scripts/scripts/reload-links
+~/dotfiles/dot-scripts/scripts/install-yay
+~/dotfiles/dot-scripts/scripts/install-packages
 
 sudo pacman -Syyu
 cd ~/dotfiles/dwm/
