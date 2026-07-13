@@ -10,4 +10,7 @@ xcompmgr -c -r-0 &
 
 ~/.fehbg &
 
+killall ssh-agent 2>/dev/null &
+eval 'ssh-agent' &
+
 exec dwm

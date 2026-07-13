@@ -6,6 +6,7 @@ zip
 bash-completion
 openssh
 python
+man-db
 fuse2
 cmake
 reflector
