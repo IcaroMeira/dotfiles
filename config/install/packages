@@ -20,12 +20,15 @@ xorg-setxkbmap
 xbindkeys
 xcompmgr
 xclip
+feh
+sxhkd
 xdg-user-dirs
 tree
 cava
 fastfetch
 eza
 nodejs
+npm
 lua
 nano
 vim

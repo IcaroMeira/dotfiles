@@ -1,15 +1,14 @@
 #!/bin/bash
 
 sudo pacman -Syyu
-sudo pacman -S stow xdg-user-dirs
-xdg-user-dirs-update
-~/dotfiles/dot-scripts/scripts/reload-links
 ~/dotfiles/dot-scripts/scripts/install-yay
 ~/dotfiles/dot-scripts/scripts/install-packages
 
-sudo pacman -Syyu
+xdg-user-dirs-update
+~/dotfiles/dot-scripts/scripts/reload-links
+
 cd ~/dotfiles/dwm/
 sudo make clean install
 cd ~/dotfiles/st
 sudo make clean install
-cd -
+reboot
