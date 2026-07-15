@@ -1,0 +1,10 @@
+#!/bin/bash
+
+perc=$(pactl get-sink-volume @DEFAULT_SINK@ | awk -F' / ' '{print $2}' | sed 's/ //')
+state=$(pactl get-sink-mute @DEFAULT_SINK@ | awk -F' ' '{print $2}')
+if [[ $state == yes ]] then
+    icon=""
+else
+    icon=""
+fi
+echo $icon $perc

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+state=$(acpi | awk -F' ' '{print $3}' | sed 's/,//')
+perc=$(acpi | awk -F', ' '{print $2}')
+case $state in
+    Charging) icon="󰂄";;
+    *)        icon="󰁹";;
+esac
+echo $perc $icon

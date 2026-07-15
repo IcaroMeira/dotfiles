@@ -13,4 +13,5 @@ xcompmgr -c -r-0 &
 killall ssh-agent 2>/dev/null &
 eval 'ssh-agent' &
 
+dwmblocks &
 exec dwm

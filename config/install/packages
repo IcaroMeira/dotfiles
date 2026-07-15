@@ -13,6 +13,7 @@ reflector
 bluez
 bluez-utils
 firefox
+brightnessctl
 xorg-server
 xorg-xinit
 xorg-xinput
@@ -39,4 +40,5 @@ usbutils
 stow
 vifm
 mpv
+acpi
 dmenu

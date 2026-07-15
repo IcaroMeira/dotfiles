@@ -1,0 +1,2 @@
+pkill -usr1 -x sxhkd
+chmod +x ~/dotfiles/dot-scripts/scripts/*

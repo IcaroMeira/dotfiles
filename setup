@@ -9,6 +9,8 @@ xdg-user-dirs-update
 
 cd ~/dotfiles/dwm/
 sudo make clean install
+cd ~/dotfiles/dwmblocks-async/
+sudo make clean install
 cd ~/dotfiles/st
 sudo make clean install
 reboot

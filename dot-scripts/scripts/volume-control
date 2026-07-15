@@ -1,0 +1,15 @@
+#!/bin/bash
+
+actualVol=$(pactl get-sink-volume @DEFAULT_SINK@ | \
+    awk -F' / ' '{print $2}' | \
+    sed 's/%//')
+if [[ $1 == 'add' &&  $actualVol -lt 100 ]] then
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+elif [[ $1 == 'rm' &&  $actualVol -gt 0 ]] then
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+elif [[ $1 == 'mute-toggle' ]] then
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+else
+    echo "Couldn't run"
+fi
+pkill -RTMIN+5 dwmblocks
