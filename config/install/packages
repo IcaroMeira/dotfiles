@@ -41,4 +41,6 @@ stow
 vifm
 mpv
 acpi
+libnotify
+dunst
 dmenu

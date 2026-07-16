@@ -1,9 +1,35 @@
 #!/bin/bash
 
 state=$(acpi | awk -F' ' '{print $3}' | sed 's/,//')
-perc=$(acpi | awk -F', ' '{print $2}')
+perc=$(acpi | awk -F', ' '{print $2}' | sed 's/%//')
 case $state in
-    Charging) icon="󰂄";;
-    *)        icon="󰁹";;
+    Charging)
+        if [[ perc -le 20 ]] then
+            icon="󰢜"
+        elif [[ perc -le 40 && perc -gt 20 ]] then
+            icon="󰂇"
+        elif [[ perc -le 60 && perc -gt 40 ]] then
+            icon="󰢝"
+        elif [[ perc -le 80 && perc -gt 60 ]] then
+            icon="󰢞"
+        elif [[ perc -lt 100 && perc -gt 80 ]] then
+            icon="󰂋"
+        else
+            icon="󰁹"
+        fi;;
+    *)
+        if [[ perc -le 20 ]] then
+            icon="󱃍"
+        elif [[ perc -le 40 && perc -gt 20 ]] then
+            icon="󰁼"
+        elif [[ perc -le 60 && perc -gt 40 ]] then
+            icon="󰁾"
+        elif [[ perc -le 80 && perc -gt 60 ]] then
+            icon="󰂀"
+        elif [[ perc -lt 100 && perc -gt 80 ]] then
+            icon="󰂂"
+        else
+            icon="󰁹"
+        fi;;
 esac
-echo $perc $icon
+echo $perc% $icon

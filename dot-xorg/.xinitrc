@@ -8,6 +8,8 @@ sxhkd -c ~/sxhkd/sxhkdrc &
 
 xcompmgr -c -r-0 &
 
+dunst &
+
 ~/.fehbg &
 
 killall ssh-agent 2>/dev/null &
