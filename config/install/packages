@@ -44,3 +44,5 @@ acpi
 libnotify
 dunst
 dmenu
+cmatrix
+ranger

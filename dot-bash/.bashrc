@@ -7,4 +7,6 @@
 
 source ~/dotfiles/config/global-shell-config
 
+bind 'set completion-ignore-case on'
+
 PS1='[\u@\h \W]\$ '

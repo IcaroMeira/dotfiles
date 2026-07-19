@@ -9,6 +9,10 @@ elif [[ $1 == 'rm' &&  $actualVol -gt 0 ]] then
     pactl set-sink-volume @DEFAULT_SINK@ -5%
 elif [[ $1 == 'mute-toggle' ]] then
     pactl set-sink-mute @DEFAULT_SINK@ toggle
+elif [[ $1 == 'add-root' ]] then
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+elif [[ $1 == 'rm-root' ]] then
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
 else
     echo "Couldn't run"
 fi
